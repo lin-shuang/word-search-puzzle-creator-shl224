@@ -1,5 +1,8 @@
 # CSE 264 Homework 2 - Word Search Puzzle Creator
 
+- Author: Shuang Lin
+- Email: shuanglin3359@gmail.com
+
 ## Purpose
 
 The purpose of this assignment is to get your feet wet programming in server side Javascript (node.js) without getting much into the node api.
