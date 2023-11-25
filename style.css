@@ -244,6 +244,14 @@ footer {
 }
 
 /* Web Games & Tools */
+#github-current {
+    color: var(--accent);
+    font-size: 40px;
+    transform: translateY(7.5px);
+}
+#github-current:hover {
+    transform: translateY(-5px);
+}
 .info{
     font-size: 15px;
 }
