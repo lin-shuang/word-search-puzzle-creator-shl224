@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1">
+  <title>Shuang Lin</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./src/shuang-lin/fonts/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <!-- Header Bar -->
+    <header>
+        <nav>
+          <div class="logo"><b>Shuang Lin</b></div>
+          <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="menu-overlay" id="menu-overlay"></div>
+    
+          <ul class="nav-links" id="nav-links">
+            <li><a href="https://lin-shuang.github.io/#home"><b>Home</b></a></li>
+            <li><a href="https://lin-shuang.github.io/#projects"><b>Projects</b></a></li>
+            <li><a href="https://lin-shuang.github.io/src/shuang-lin/resume/Shuang_Lin_Resume.pdf" download="Shuang_Lin_Resume.pdf" target="_blank"><b>Resume</b></a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <!-- Background Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+        <section class="separator"></section>
+        <a href="https://lin-shuang.github.io/src/pages/web-games-tools/web-games-tools.html">
+            <button id="button-back">Back</button>
+        </a>
+
+        <section class="separator"></section>
+        <h1>Word Search Puzzle Creator</h1>
+
+        <!-- Size Slider -->
+        <div id="size-slider">
+            <label for="size">Size:</label>
+            <p class="info">Set size of the board to be larger than the largest word so it holds.</p>
+            <input type="range" id="size" name="size" min="1" max="100">
+            <span id="size-value" contenteditable="true" oninput="document.getElementById('size').value = parseInt(this.innerText) || 0">50</span>
+        </div>
+
+        <section class="separator"></section>
+        <!-- Words Uploader -->
+        <div id="word-uploader">
+            <label for="words">Words:</label>
+            <p class="info">Input words separated by commas or spaces.</p>
+            <textarea rows="10" cols="50" id="words" name="words"></textarea>
+        </div>
+        <button id="button-create">Create Board</button>
+
+        <!-- Game Board -->
+        <p id="info-board"></p>
+        <table id="game-board"></table>
+    </main>
+
+    <footer>
+        <div>&copy; 2023 Shuang Lin</div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/shuang__________" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shuanglin-/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://www.youtube.com/@linshuang" target="_blank">
+                <i class="fa fa-youtube"></i>
+            </a>
+            <a href="https://github.com/lin-shuang" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./src/shuang-lin/scripts/nav-links.js"></script>
+    <script src="./src/scripts/puzzle.js"></script>
+</body>
+</html>
